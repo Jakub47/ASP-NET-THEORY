@@ -103,9 +103,11 @@
     <Content Include="Web.config" />
     <Content Include="Views\Home\Parametry2.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home2\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Home2Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
