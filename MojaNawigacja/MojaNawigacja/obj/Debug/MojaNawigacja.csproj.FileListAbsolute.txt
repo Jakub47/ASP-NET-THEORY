@@ -89,3 +89,7 @@ C:\Users\Ragnus\Desktop\ASPProjects\ASP-NET-THEORY\MojaNawigacja\MojaNawigacja\o
 C:\Users\Ragnus\Desktop\ASPProjects\ASP-NET-THEORY\MojaNawigacja\MojaNawigacja\obj\Debug\MojaNawigacja.csproj.CopyComplete
 C:\Users\Ragnus\Desktop\ASPProjects\ASP-NET-THEORY\MojaNawigacja\MojaNawigacja\obj\Debug\MojaNawigacja.dll
 C:\Users\Ragnus\Desktop\ASPProjects\ASP-NET-THEORY\MojaNawigacja\MojaNawigacja\obj\Debug\MojaNawigacja.pdb
+C:\Users\Ragnus\Desktop\ASPProjects\ASP-NET-THEORY\MojaNawigacja\MojaNawigacja\bin\EntityFramework.dll
+C:\Users\Ragnus\Desktop\ASPProjects\ASP-NET-THEORY\MojaNawigacja\MojaNawigacja\bin\EntityFramework.SqlServer.dll
+C:\Users\Ragnus\Desktop\ASPProjects\ASP-NET-THEORY\MojaNawigacja\MojaNawigacja\bin\EntityFramework.xml
+C:\Users\Ragnus\Desktop\ASPProjects\ASP-NET-THEORY\MojaNawigacja\MojaNawigacja\bin\EntityFramework.SqlServer.xml
