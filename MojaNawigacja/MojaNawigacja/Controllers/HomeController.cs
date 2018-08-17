@@ -8,22 +8,22 @@ namespace MojaNawigacja.Controllers
 {
     public class HomeController : Controller
     {
-        //public ActionResult Index(string id)
-        //{
-        //    ViewBag.parametr = id;
-        //    return View();
-        //}
         Int32? _idRekordu;
-        public ActionResult Index(string id)
+        public ActionResult Index()
         {
-            if (!(id == null))
-                _idRekordu = Convert.ToInt32(id);
-            else
-                HttpNotFound();
-
-            ViewBag.IdRekordu = _idRekordu;
             return View();
         }
+
+        //public ActionResult Index(string id)
+        //{
+        //    if (!(id == null))
+        //        _idRekordu = Convert.ToInt32(id);
+        //    else
+        //        HttpNotFound();
+
+        //    ViewBag.IdRekordu = _idRekordu;
+        //    return View();
+        //}
 
         public ActionResult About()
         {
