@@ -14,5 +14,10 @@ namespace ASP_TEORIA
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
+
+        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+        {
+            filters.Add(new AuthorizeAttribute());
+        }
     }
 }
