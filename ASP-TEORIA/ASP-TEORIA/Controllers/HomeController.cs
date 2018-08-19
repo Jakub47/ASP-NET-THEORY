@@ -34,5 +34,10 @@ namespace ASP_TEORIA.Controllers
 
             return View(kursy);
         }
+
+        public ActionResult Przyklad()
+        {
+            return View();
+        }
     }
 }

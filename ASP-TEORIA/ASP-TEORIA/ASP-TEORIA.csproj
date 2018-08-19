@@ -132,6 +132,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_Layout2.cshtml" />
     <Content Include="Views\Home\Index2.cshtml" />
+    <Content Include="Views\Home\Przyklad.cshtml" />
+    <Content Include="Views\Shared\_Czastkowy.cshtml" />
+    <Content Include="Views\Shared\_CzastkowyModel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
