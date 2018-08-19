@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ASP_TEORIA.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -20,12 +21,18 @@ namespace ASP_TEORIA.Controllers
         //    return View();
         //}
 
-        [HandleError(ExceptionType = typeof(DivideByZeroException), View = "DzieleniePrzezZero")]
+        //[HandleError(ExceptionType = typeof(DivideByZeroException), View = "DzieleniePrzezZero")]
         public ActionResult Index()
         {
-            var zero = 0;
-            int wynik = 2 / zero;
-            return View();
+            var kursy = new List<Kursy>()
+            {
+                new Kursy(){Nazwa = "html", Opis = "Kurs html"},
+                 new Kursy(){Nazwa = "css", Opis = "Kurs css"},
+                  new Kursy(){Nazwa = "c++", Opis = "Kurs c++",},
+                   new Kursy(){Nazwa = "c#", Opis = "Kurs C#"},
+            };
+
+            return View(kursy);
         }
     }
 }
