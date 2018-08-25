@@ -1,0 +1,65 @@
+﻿@model Kadry.Models.PracownicyModels
+@{
+    ViewBag.Title = "UtworzPracownika";
+}
+
+<h2>UtworzPracownika</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary("Utworzenie pracownika nie powidoło się. Popraw poniższe błędy i spróbuj ponownie")
+    <fieldset>
+        <legend>Pracownik</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.Imie)
+        </div>
+        <div class="editor-label">
+            @Html.EditorFor(m => m.Imie)
+            @Html.ValidationMessageFor(m => m.Imie)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.Nazwisko)
+        </div>
+        <div class="editor-label">
+            @Html.EditorFor(m => m.Nazwisko)
+            @Html.ValidationMessageFor(m => m.Nazwisko)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.Wiek)
+        </div>
+        <div class="editor-label">
+            @Html.EditorFor(m => m.Wiek)
+            @Html.ValidationMessageFor(m => m.Wiek)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.Stanowisko)
+        </div>
+        <div class="editor-label">
+            @Html.EditorFor(m => m.Stanowisko)
+            @Html.ValidationMessageFor(m => m.Stanowisko)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(m => m.DataZatrudnienia)
+        </div>
+        <div class="editor-label">
+            @Html.EditorFor(m => m.DataZatrudnienia)
+            @Html.ValidationMessageFor(m => m.DataZatrudnienia)
+        </div>
+
+        <p>
+            <input type="submit" value="Utwórz" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Powrot Do lsity pracownikow", "ListaPracownikow")
+</div>

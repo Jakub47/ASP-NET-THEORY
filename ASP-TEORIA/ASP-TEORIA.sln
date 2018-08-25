@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP-TEORIA", "ASP-TEORIA\AS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "modele", "modele\modele.csproj", "{44F17E6C-077C-4DD5-9E21-C71A258BF7F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rodzial4", "Rodzial4\Rodzial4.csproj", "{4B639E91-CD8E-4940-9901-BFFFC5BA0CC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kadry", "Kadry\Kadry.csproj", "{EF9EC1F5-0BD5-4D7D-9ACC-1310695B89F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{44F17E6C-077C-4DD5-9E21-C71A258BF7F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44F17E6C-077C-4DD5-9E21-C71A258BF7F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44F17E6C-077C-4DD5-9E21-C71A258BF7F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4B639E91-CD8E-4940-9901-BFFFC5BA0CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4B639E91-CD8E-4940-9901-BFFFC5BA0CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4B639E91-CD8E-4940-9901-BFFFC5BA0CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4B639E91-CD8E-4940-9901-BFFFC5BA0CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF9EC1F5-0BD5-4D7D-9ACC-1310695B89F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF9EC1F5-0BD5-4D7D-9ACC-1310695B89F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF9EC1F5-0BD5-4D7D-9ACC-1310695B89F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9EC1F5-0BD5-4D7D-9ACC-1310695B89F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Kadry.Models.PracownicyModels>
+
+@{
+    ViewBag.Title = "ListaPracownikow";
+}
+
+<h2>ListaPracownikow</h2>
+
+@if(Model.Count() == 0)
+{
+    <p>
+        Brak pracownikow
+    </p>
+}
+else
+{
+    <ul>
+        @foreach(var pracownik in Model)
+        {
+        <li>
+            @Html.Encode(pracownik.Imie) <br />
+            @Html.Encode(pracownik.Nazwisko) <br />
+            @Html.Encode(pracownik.Wiek) <br />
+            @Html.Encode(pracownik.Stanowisko) <br />
+            @Html.Encode(pracownik.DataZatrudnienia) <br />
+        </li>
+        }
+    </ul>
+}
+
+<p>
+    @Html.ActionLink("Utwórz pracownika", "UtworzPracownika")
+</p>
