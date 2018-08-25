@@ -35,6 +35,19 @@ namespace ASP_TEORIA.Controllers
             return View(kursy);
         }
 
+        [ChildActionOnly]
+        public ActionResult PobierzGodzinePartial()
+        {
+            var czas = DateTime.Now.ToLongTimeString();
+            return PartialView("PartialCzas");
+        }
+
+        [ChildActionOnly]
+        public string PobierzGodzine()
+        {
+            return  DateTime.Now.ToLongTimeString();
+        }
+
         public ActionResult Przyklad()
         {
             return View();

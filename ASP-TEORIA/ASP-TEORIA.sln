@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP-TEORIA", "ASP-TEORIA\ASP-TEORIA.csproj", "{57039763-4202-4C93-8088-991C9A538520}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "modele", "modele\modele.csproj", "{44F17E6C-077C-4DD5-9E21-C71A258BF7F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rodzial4", "Rodzial4\Rodzial4.csproj", "{4B639E91-CD8E-4940-9901-BFFFC5BA0CC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{57039763-4202-4C93-8088-991C9A538520}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57039763-4202-4C93-8088-991C9A538520}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57039763-4202-4C93-8088-991C9A538520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44F17E6C-077C-4DD5-9E21-C71A258BF7F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F17E6C-077C-4DD5-9E21-C71A258BF7F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44F17E6C-077C-4DD5-9E21-C71A258BF7F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44F17E6C-077C-4DD5-9E21-C71A258BF7F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B639E91-CD8E-4940-9901-BFFFC5BA0CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B639E91-CD8E-4940-9901-BFFFC5BA0CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B639E91-CD8E-4940-9901-BFFFC5BA0CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B639E91-CD8E-4940-9901-BFFFC5BA0CC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
