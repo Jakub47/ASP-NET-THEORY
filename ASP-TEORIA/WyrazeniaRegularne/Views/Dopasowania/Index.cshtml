@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("DodajElementDoSprawdzenia", "Dopasowania", FormMethod.Post))
+{
+    <div>
+        @Html.Label("Dodaj wyrażenie do sprawdzenia")
+    </div>
+    <div>
+        @Html.TextBox("ElementDoSprawdzenia")
+        <input type="submit" value="Dodaj do listy" />
+    </div>
+}
+
+@using (Html.BeginForm("WyczyscListe", "Dopasowania", FormMethod.Post))
+{
+    <div>
+        @Html.Label("Lista wyrażen do sprawdzenia")
+    </div>
+    <div>
+        @Html.ListBox("ListaWyrazenDoSprawdzenia", null, new { style = "width: 350px; height: 300px;" })
+    </div>
+
+    <p>
+        <input type="submit" value="Wyczyść Liste" />
+    </p>
+}
+
+@using (Html.BeginForm("SprawdzDopasowania", "Dopasowania", FormMethod.Post))
+{
+    <div>
+        @Html.Label("Podaj wzorzec")
+    </div>
+    <div>
+        @Html.TextBox("Wzorzec")
+        <input type="submit" value="Dodaj do listy" />
+    </div>
+}
+

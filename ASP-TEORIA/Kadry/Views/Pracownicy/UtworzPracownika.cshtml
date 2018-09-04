@@ -54,6 +54,14 @@
             @Html.ValidationMessageFor(m => m.DataZatrudnienia)
         </div>
 
+        <div class="editor-label">
+            @Html.LabelFor(o => o.Email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(o => o.Email)
+            @Html.ValidationMessageFor(o => o.Email)
+        </div>
+
         <p>
             <input type="submit" value="Utwórz" />
         </p>

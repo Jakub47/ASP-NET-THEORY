@@ -41,5 +41,11 @@ namespace Kadry.Models
             else
                 return ValidationResult.Success;
         }
+
+
+        [Required]
+        [DisplayName("Adres poczty elektronicznej")]
+        [RegularExpression("^[a-z0-9_\\+-]+(\\.{a-z0-9_\\+-]+-]+)*@[a-z0-9]+(\\.[a-z0-9-]+)*\\.([a-z]{2,4})$", ErrorMessage = "Podano niepoprawny adres")]
+        public string Email { get; set; }
     }
 }
