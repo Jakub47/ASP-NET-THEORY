@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kadry", "Kadry\Kadry.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WyrazeniaRegularne", "WyrazeniaRegularne\WyrazeniaRegularne.csproj", "{492D1093-7621-4721-A1AB-618DD1FB688F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsAjax", "MsAjax\MsAjax.csproj", "{A1C796DD-23A4-48DA-B568-0FE247C56AB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{492D1093-7621-4721-A1AB-618DD1FB688F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{492D1093-7621-4721-A1AB-618DD1FB688F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{492D1093-7621-4721-A1AB-618DD1FB688F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1C796DD-23A4-48DA-B568-0FE247C56AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1C796DD-23A4-48DA-B568-0FE247C56AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1C796DD-23A4-48DA-B568-0FE247C56AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1C796DD-23A4-48DA-B568-0FE247C56AB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
