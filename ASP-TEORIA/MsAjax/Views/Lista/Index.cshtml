@@ -25,5 +25,6 @@
 }
 
 <div id="ListaElementow">
-    @Html.ListBox("Lista", (SelectList)ViewBag.Lista, new {style = "width: 410px; height: 300px;"})
+    @* Html.ListBox("Lista", (SelectList)ViewBag.Lista, new {style = "width: 410px; height: 300px;"}) *@
+    @{ Html.RenderPartial("_Lista"); }
 </div>

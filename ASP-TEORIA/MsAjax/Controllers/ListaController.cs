@@ -13,14 +13,16 @@ namespace MsAjax.Controllers
         // GET: Lista
         public ActionResult Index()
         {
-            ViewBag.Lista = new SelectList(listaElementow);
+            //ViewBag.Lista = new SelectList(listaElementow);
             return View();
         }
 
         public ActionResult DodajElementDoListy(FormCollection formCollection)
         {
-            listaElementow.Add(formCollection[0].ToString());
-            return RedirectToAction("Index");
+            if(formCollection.Count > 0)
+                listaElementow.Add(formCollection[0].ToString() + " " + 
+                    DateTime.Now.ToLongTimeString());
+            return View("Lista", listaElementow);
         }
     }
 }
