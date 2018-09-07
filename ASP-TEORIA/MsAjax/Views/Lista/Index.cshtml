@@ -7,12 +7,28 @@
 <script src="~/Scripts/MicrosoftAjax.js"></script>
 <script src="~/Scripts/MicrosoftMvcAjax.js"></script>
 
+<script>
+    $(document).ready(function () {
+        $('#formularz').submit(function () {
+            $.ajax({
+                type: 'POST',
+                data: $('#formularz').serialize(),
+                success: function (data) {
+                    $('#ListaElementow').html(data);
+                }
+            });
+            return false;
+        });
+    });
+</script>
+
+
 <p>
     Czas ostatniego odświeżenia całej witryny
     @DateTime.Now.ToLocalTime().ToLongTimeString()
 </p>
 
-@using (Ajax.BeginForm("DodajElementDoListy", new AjaxOptions {
+@*@using (Ajax.BeginForm("DodajElementDoListy", new AjaxOptions {
     UpdateTargetId = "ListaElementow",
     Confirm="Potwierdz dodanie elementu do listy",
     OnSuccess="alert('Pomylne dodanie elementu do listy')"
@@ -22,7 +38,14 @@
         @Html.TextBox("ElementDoDodania",null, new { style = "width: 250px" })
         <input type="submit" value="Dodaj do listy" , style="width: 150px;" />
     </div>
-}
+}*@
+
+<form action="@Url.Action("Index")" method="post" id="formularz">
+    <div class="editor-field">
+        @Html.TextBox("ElementDoDodania", null, new { name= "ElementDoDodania",  style = "width: 250px" })
+        <input type="submit" value="Dodaj do listy" , style="width: 150px;" />
+    </div>
+</form>
 
 <div id="ListaElementow">
     @* Html.ListBox("Lista", (SelectList)ViewBag.Lista, new {style = "width: 410px; height: 300px;"}) *@
