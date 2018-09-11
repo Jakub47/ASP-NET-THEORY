@@ -1,0 +1,24 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    ViewBag.Title = "Blad";
+}
+
+<h2>Podcas próby przetwarzania wystąpił błą spowodowanym niwlasciwym przekazaniem bledu </h2>
+
+<h2>Oto szczegoly bledu: </h2>
+
+<p>
+    Nazwa kontrolera @Model.ControllerName
+</p>
+
+<p>
+    Metoda akcji ktora zglosila wyjatek: @Model.ActionName
+</p>
+
+<p>
+      Tresc wyjatku : @Model.Exception.Message
+</p>
+<p>
+    Sros wywołań : @Model.Exception.StackTrace
+</p>

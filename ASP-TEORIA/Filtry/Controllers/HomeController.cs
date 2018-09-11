@@ -45,5 +45,11 @@ namespace Filtry.Controllers
         {
             throw new NotImplementedException();
         }
+
+        [NonAction]
+        public string WyswietlTajneDane()
+        {
+            return "To sa dane ktore nie powinny tradic w niepolowane rece";
+        }
     }
 }
