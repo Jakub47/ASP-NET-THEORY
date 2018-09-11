@@ -26,5 +26,24 @@ namespace Filtry.Controllers
 
             return View();
         }
+
+
+        [HandleError(View = "Blad", ExceptionType = typeof(ArgumentException))]
+        public ActionResult PobierzParametr(int parammetr)
+        {
+            if (parammetr <= 0)
+                throw new ArgumentException("Parametr tej metody nie moze byc ujemny");
+            else if (parammetr == 0)
+                throw new ApplicationException();
+
+            else
+                return View("Index");
+        }
+
+        [HandleError]
+        public ActionResult PustaMetoda()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
