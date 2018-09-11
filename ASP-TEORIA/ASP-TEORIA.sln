@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WyrazeniaRegularne", "Wyraz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsAjax", "MsAjax\MsAjax.csproj", "{A1C796DD-23A4-48DA-B568-0FE247C56AB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Filtry", "Filtry\Filtry.csproj", "{DD3BD775-305B-458B-902A-5BF255FBBC2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A1C796DD-23A4-48DA-B568-0FE247C56AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1C796DD-23A4-48DA-B568-0FE247C56AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1C796DD-23A4-48DA-B568-0FE247C56AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD3BD775-305B-458B-902A-5BF255FBBC2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD3BD775-305B-458B-902A-5BF255FBBC2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD3BD775-305B-458B-902A-5BF255FBBC2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD3BD775-305B-458B-902A-5BF255FBBC2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
