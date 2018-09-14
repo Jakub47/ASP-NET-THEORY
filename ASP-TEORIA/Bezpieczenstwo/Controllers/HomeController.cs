@@ -18,8 +18,8 @@ namespace Bezpieczenstwo.Controllers
         public string DodajKomentarz(FormCollection formCollection)
         {
             string komentarz =
-                "<br /><b> " + formCollection[0]
-                + ":</b><br />" + formCollection[1]
+                "<br /><b> " + Server.HtmlEncode(formCollection[0])
+                + ":</b><br />" + Server.HtmlEncode(formCollection[1])
                 + "<br />";
             return komentarz;
         }
