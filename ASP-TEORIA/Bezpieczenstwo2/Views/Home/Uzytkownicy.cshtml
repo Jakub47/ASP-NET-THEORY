@@ -1,0 +1,71 @@
+﻿@model MembershipUserCollection
+@{
+    ViewBag.Title = "Uzytkownicy";
+}
+
+<h2>Uzytkownicy</h2>
+
+@if (Model.Count == 0)
+{
+    <p>
+        Brak użytkowników
+    </p>
+}
+else
+{
+    <table>
+        <tr>
+            <th>
+                Nazwa użytkownika
+            </th>
+            <th>
+                Adres e-mail
+            </th>
+            <th>
+                Data
+            </th>
+            <th>
+                Zalogowany?
+            </th>
+            <th>
+                Przenaleznosc do grup
+            </th>
+            <th>
+                Opcje
+            </th>
+        </tr>
+        @foreach (MembershipUser user in Model)
+        {
+            <tr>
+                <td>
+                    @Html.Encode(user.UserName)
+                </td>
+                <td>
+                    @Html.Encode(user.Email)
+                </td>
+                <td>
+                    @Html.Encode(user.CreationDate)
+                </td>
+                <td>
+                    @Html.CheckBox("Zalogowany", user.IsOnline)
+                </td>
+                <td>
+                    <div id=@user.UserName>
+                        @{ Html.RenderPartial("GrupaUzytkownika", user);}
+                    </div>
+                </td>
+                <td>
+                    @Html.ActionLink("Usuń", "UsunUzytkownikow", new { nazwaUzytkownika = user.UserName })
+                </td>
+            </tr>
+        }
+    </table>
+}
+
+<p>
+    @Html.ActionLink("Utwórz nowego użytkownika", "Register", "Account", new { returnUrl = "/Admin/Uzytkownicy", zaloguj  = false }, null)
+</p>
+
+<p>
+    @Html.ActionLink("Powrów do panelu administracyjnego", "Index", "Admin")
+</p>

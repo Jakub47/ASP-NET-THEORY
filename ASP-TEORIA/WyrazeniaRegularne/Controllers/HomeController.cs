@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace WyrazeniaRegularne.Controllers
 {
@@ -11,6 +12,7 @@ namespace WyrazeniaRegularne.Controllers
         public ActionResult Index()
         {
             return View();
+            
         }
 
         public ActionResult About()
