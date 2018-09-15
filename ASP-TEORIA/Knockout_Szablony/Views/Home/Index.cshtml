@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Knockout_Szablony.Models.Produkt>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/knockout-3.4.2.js"></script>
+
+<div data-bind="template: {name: 'produktSzablon', foreach: produkty}"></div>
+
+<script type="text/html" id="produktSzablon">
+    <p>Nazwa produktu: <span data-bind="text: Nazwa"></span> Data dodania: <span data-bind="text: DataDodania"></span></p>
+</script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var initialData = @Html.Raw(Json.Encode(Model));
+        var viewModel = {
+            produkty: ko.observableArray(initialData);
+        };
+        ko.applyBindings(viewModel);
+    });
+</script>
+
+<h2>Index</h2>
+
